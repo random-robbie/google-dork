@@ -11,7 +11,7 @@ I've made this using python 3 but it should work in python2.
 
 
 
-The Following Modules are needed.
+Requirements
 ----
 
 ```
@@ -22,3 +22,5 @@ Note
 ------
 
 I have not used inurl:"DORK" inurl:"&" as you end up getting results once and then you have to change the proxy each time.
+
+It uses my XSS dork server https://xsses.rocks/dork/ - everytime i find a reflective parameter it's logged and put in to the list.
