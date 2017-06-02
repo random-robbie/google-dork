@@ -13,13 +13,9 @@ I've made this using python 3 but it should work in python2.
 
 The Following Modules are needed.
 ----
-requests
-google
-
-
 
 ```
-pip install requests google
+pip install -r requirements.txt
 ```
 
 Note
