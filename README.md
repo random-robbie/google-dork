@@ -27,3 +27,13 @@ It uses my XSS dork server https://xsses.rocks/dork/ - everytime i find a reflec
 
 
 Please send a PR request if you can remove any results with ASCII and also urldecode the results.
+
+
+
+
+To do
+------
+Remove youtube links
+Remove VK links
+Urldecode links
+Remove ASCII links
