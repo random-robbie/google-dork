@@ -20,3 +20,8 @@ easy to install
 ```
 pip install requests google
 ```
+
+Note
+------
+
+I have not used inurl:"DORK" inurl:"&" as you end up getting results once and then you have to change the proxy each time.
