@@ -42,3 +42,5 @@ Urldecode links
 Remove ASCII links
 
 Remove PDF links
+
+Remove FTP links
