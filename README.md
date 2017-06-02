@@ -34,6 +34,11 @@ Please send a PR request if you can remove any results with ASCII and also urlde
 To do
 ------
 Remove youtube links
+
 Remove VK links
+
 Urldecode links
+
 Remove ASCII links
+
+Remove PDF links
