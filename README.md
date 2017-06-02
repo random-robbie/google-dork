@@ -9,13 +9,14 @@ You can remove this but remember google will give you the lovely capture!
 
 I've made this using python 3 but it should work in python2.
 
-Requires:
 
+
+Requires:
+----
 requests
 google
 
 
-easy to install
 
 ```
 pip install requests google
