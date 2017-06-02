@@ -11,7 +11,7 @@ I've made this using python 3 but it should work in python2.
 
 
 
-Requires:
+The Following Modules are needed.
 ----
 requests
 google
