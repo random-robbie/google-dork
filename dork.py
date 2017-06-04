@@ -2,7 +2,7 @@ from google import search
 import os
 import requests
 
-### Config ###
+### Config Remove the proxy part if not required ###
 proxy = "http://127.0.0.1:8080"
 os.environ['http_proxy'] = proxy 
 os.environ['HTTP_PROXY'] = proxy
@@ -23,12 +23,17 @@ def grab_dork ():
 
 dork = grab_dork ()
 print ("Dork Being Used..... "+dork+"")
-out=open("results.txt","a")
-try:
-	for title in search(""+dork+" &", stop=100):
-				print(title)
-				out.write(title)
-				out.write("\n")
-	out.close()
-except:
-		print ("Google Capture.. Urgh")
+out=open("tocheck3.txt","a")
+for title in search(""+dork+" &", stop=200):
+	if title.startswith(("https://www.youtube.com","http://vk.com","https://www.linkedin.com","https://en.wikipedia.org","https://itunes.apple.com","https://www.github.com","https://twitter.com","https://github.com","https://stackoverflow.com","https://www.facebook.com")):
+		print (""+title+"... Ignored")
+	elif title.endswith((".pdf",".txt")):
+		print (""+title+"... Ignored")
+	else:
+		print(title)
+		out.write(title)
+		out.write("\n")
+
+		
+out.close()
+
