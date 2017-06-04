@@ -28,19 +28,17 @@ It uses my XSS dork server https://xsses.rocks/dork/ - everytime i find a reflec
 
 Please send a PR request if you can remove any results with ASCII and also urldecode the results.
 
+if you get a 503 error try removing .google-cookies file and then trying again if it returns the same result change your ip.
+
 
 
 
 To do
 ------
-Remove youtube links
-
-Remove VK links
 
 Urldecode links
 
 Remove ASCII links
 
-Remove PDF links
+Handle errors properly
 
-Remove FTP links
