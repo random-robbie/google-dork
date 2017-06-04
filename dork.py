@@ -23,7 +23,7 @@ def grab_dork ():
 
 dork = grab_dork ()
 print ("Dork Being Used..... "+dork+"")
-out=open("tocheck3.txt","a")
+out=open("tocheck.txt","a")
 for title in search(""+dork+" &", stop=200):
 	if title.startswith(("https://www.youtube.com","http://vk.com","https://www.linkedin.com","https://en.wikipedia.org","https://itunes.apple.com","https://www.github.com","https://twitter.com","https://github.com","https://stackoverflow.com","https://www.facebook.com")):
 		print (""+title+"... Ignored")
