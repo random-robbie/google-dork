@@ -9,6 +9,14 @@ You can remove this but remember google will give you the lovely capture!
 
 I've made this using python 3 but it should work in python2.
 
+Requirements
+----
+
+```
+pip install -r requirements.txt
+```
+
+
 Usage
 ---
 
@@ -27,12 +35,6 @@ optional arguments:
  if nothing is provided then it will use the API
 
 
-Requirements
-----
-
-```
-pip install -r requirements.txt
-```
 
 Note
 ------
