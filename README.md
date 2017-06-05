@@ -36,7 +36,7 @@ pip install -r requirements.txt
 
 Note
 ------
-
+```
 I have not used inurl:"DORK" inurl:"&" as you end up getting results once and then you have to change the proxy each time.
 
 It uses my XSS dork server https://xsses.rocks/dork/ - everytime i find a reflective parameter it's logged and put in to the list.
@@ -45,16 +45,16 @@ It uses my XSS dork server https://xsses.rocks/dork/ - everytime i find a reflec
 Please send a PR request if you can remove any results with ASCII and also urldecode the results.
 
 if you get a 503 error try removing .google-cookies file and then trying again if it returns the same result change your ip.
-
+```
 
 
 
 To do
 ------
-
+```
 Urldecode links
 
 Remove ASCII links
 
 Handle errors properly
-
+```
