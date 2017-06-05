@@ -1,8 +1,9 @@
 from google import search
 import os
 import requests
+import argparse
 
-### Config Remove the proxy part if not required ###
+### Config ###
 proxy = "http://127.0.0.1:8080"
 os.environ['http_proxy'] = proxy 
 os.environ['HTTP_PROXY'] = proxy
@@ -20,10 +21,19 @@ def grab_dork ():
 	return response.text
 
 
+parser = argparse.ArgumentParser(description='Enter your Own Dork or Use System generated Dork')
+parser.add_argument('-d', action='store', dest='dork',
+                    help='type in your custom dork i.e inurl:&')
 
-dork = grab_dork ()
+
+results = parser.parse_args()
+
+if results.dork == None:
+	dork = grab_dork ()
+else:
+	dork = results.dork
 print ("Dork Being Used..... "+dork+"")
-out=open("tocheck.txt","a")
+out=open("tocheck3.txt","a")
 for title in search(""+dork+" &", stop=200):
 	if title.startswith(("https://www.youtube.com","http://vk.com","https://www.linkedin.com","https://en.wikipedia.org","https://itunes.apple.com","https://www.github.com","https://twitter.com","https://github.com","https://stackoverflow.com","https://www.facebook.com")):
 		print (""+title+"... Ignored")
