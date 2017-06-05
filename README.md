@@ -9,6 +9,22 @@ You can remove this but remember google will give you the lovely capture!
 
 I've made this using python 3 but it should work in python2.
 
+Update
+---
+
+
+```
+usage: dork.py [-h] [-d DORK]
+
+Enter your Own Dork or Use System generated Dork
+
+optional arguments:
+  -h, --help  show this help message and exit
+  -d DORK     type in your custom dork i.e inurl:&
+  
+  ```
+  
+ if nothing is provided then it will use the API
 
 
 Requirements
